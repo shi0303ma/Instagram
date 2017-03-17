@@ -62,8 +62,6 @@ class PostTableViewCell: UITableViewCell {
             self.likeButton.setImage(buttonImage, for: UIControlState.normal)
         }
 
-//        var commentNumber = postData.comments.count
-//        commentLabel.text = "\(commentNumber)"
         print(postData.comments)
         
         var commentsText = ""

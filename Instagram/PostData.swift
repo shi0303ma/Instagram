@@ -20,8 +20,6 @@ class PostData: NSObject {
     var likes: [String] = []
     var isLiked: Bool = false
     var comments: [Any] = []
-//    var commentUserName: String?
-//    var commentUserId: String?
     
     init(snapshot: FIRDataSnapshot, myId: String) {
         self.id = snapshot.key
@@ -51,7 +49,5 @@ class PostData: NSObject {
         if let comments = valueDictionary["comments"] as? [Any] {
             self.comments = comments
         }
-//        self.commentUserName = valueDictionary["commentUserName"] as? String
-//        self.commentUserId = snapshot.key
     }
 }
